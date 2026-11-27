@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: "ru"
+site_url: "https://YOUR-SITE.netlify.app"
+display_url: "https://YOUR-SITE.netlify.app"
+collections:
+  - name: "pages"
+    label: "Контент сайта"
+    files:
+      - name: "homepage"
+        label: "Главная страница"
+        file: "content/homepage.json"
+        fields:
+          - {label: "Заголовок", name: "headline", widget: "string"}
+          - {label: "Описание", name: "intro", widget: "text"}
+          - {label: "Текст контактов", name: "contactText", widget: "text"}
+          - {label: "Телефон для ссылки (международный формат)", name: "phone", widget: "string"}
+          - {label: "Телефон отображаемый", name: "phoneDisplay", widget: "string"}
+          - {label: "WhatsApp номер (без +)", name: "whatsapp", widget: "string"}
